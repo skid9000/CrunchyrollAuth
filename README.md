@@ -1,5 +1,5 @@
 # CrunchyrollAuth
-A little script made in Python to generate a cookie.txt file from Crunchyroll creditentials.
+A little script made in Python to generate a cookies.txt file from Crunchyroll creditentials.
 
 It is used in <a href="https://github.com/skid9000/Crunchyroll-Downloader">Crunchyroll Downloader</a> as login.exe
 
