@@ -10,16 +10,16 @@ def login(username,password):
 	data = {'formname' : 'RpcApiUser_Login', 'fail_url' : 'http://www.crunchyroll.com/login', 'name' : username, 'password' : password}
 	req = urllib2.Request(url, urllib.urlencode(data))
 	res = opener.open(req)
+
+
 try:
-	path = sys.argv[3]
-	with open(path): pass
+	with open('C:\\ProgramData\\Crunchy-DL\\cookies.txt'): pass
 except IOError:
-	path = sys.argv[3]
-	cookie_jar = cookielib.MozillaCookieJar(path)
+	cookie_jar = cookielib.MozillaCookieJar('C:\\ProgramData\\Crunchy-DL\\cookies.txt')
 	cookie_jar.save()
 try:
-	path = sys.argv[3]
-	cookie_jar = cookielib.MozillaCookieJar(path)
+
+	cookie_jar = cookielib.MozillaCookieJar('C:\\ProgramData\\Crunchy-DL\\cookies.txt')
 	cookie_jar.load()
 	username = sys.argv[1]
 	password = sys.argv[2]
@@ -34,12 +34,11 @@ try:
 	if re.search(username+'(?i)',site):
 		print 'Login successful.'
 		cookie_jar.save()
-		for line in fileinput.input(path,inplace =1):
+		for line in fileinput.input('C:\\ProgramData\\Crunchy-DL\\cookies.txt',inplace =1):
 			line = line.strip()
 			if not 'c_visitor' in line:
 				print line
 except IOError:
-	path = sys.argv[3]
 	print 'Login failed.'
-	os.remove(path)
+	os.remove('C:\\ProgramData\\Crunchy-DL\\cookies.txt')
 	sys.exit()
