@@ -1,9 +1,0 @@
-# Netscape HTTP Cookie File
-# http://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file!  Do not edit.
-
-.crunchyroll.com	TRUE	/	FALSE	1582914517	__cfduid	d4f8fb64aede024a3791a8e3ccd9ed0c71551378517
-.crunchyroll.com	TRUE	/	FALSE	1566930525	c_visitor	50b5b58a-e238-477b-8e27-777685be0888
-.crunchyroll.com	TRUE	/	FALSE	1551986925	cf_clearance	62bc1505f0d4f3c5b9483469e67b1c04ed9ac34f-1551378525-604800-150
-.crunchyroll.com	TRUE	/	FALSE		sess_id	4is4q405ht13nbggaqj2ljo2dhcaatwy
-.crunchyroll.com	TRUE	/	FALSE		session_id	s4k9k52no2mtk9ubjhkjcvnqq5
