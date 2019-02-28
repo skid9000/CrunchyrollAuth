@@ -6,8 +6,7 @@ import sys
 scraper = cfscrape.create_scraper()
 
 try:
-	import config
-	scraper.headers["User-Agent"] = config.UA
+	scraper.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0"
 except:
 	pass
 
