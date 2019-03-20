@@ -1,1 +1,5 @@
 cookies.txt
+build
+dist
+login_CrunchyDownloader.spec
+__pycache__
