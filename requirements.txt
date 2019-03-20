@@ -1,0 +1,4 @@
+requests
+cfscrape
+PyInstaller
+bs4
